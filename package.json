@@ -1,0 +1,66 @@
+{
+  "name": "poptikr-merchant",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.10.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.8",
+    "prettier": "^2.1.2",
+    "pretty": "^2.0.0",
+    "react": "^16.13.1",
+    "react-data-table-component": "^6.11.5",
+    "react-datepicker": "^3.2.2",
+    "react-dom": "^16.13.1",
+    "react-image-crop": "^8.6.6",
+    "react-paginate": "^6.5.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-select": "^3.1.0",
+    "react-toastify": "^6.0.9",
+    "reactstrap": "^8.6.0",
+    "styled-components": "^5.2.0",
+    "validator": "^13.1.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false  react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      "since 2010",
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "since 2010",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretty --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0"
+  }
+}

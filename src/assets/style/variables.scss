@@ -1,0 +1,37 @@
+// Variable overrides
+
+// $blue:    #007bff !default;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+$red: #ff0000 !default;
+// $orange:  #fd7e14 !default;
+// $yellow:  #ffc107 !default;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+$primary: #8bced6;
+$primary-light: #dceef1;
+$primary-black: #000;
+
+$pagination-color: $primary-black;
+$pagination-active-bg: $primary-black;
+$pagination-hover-bg: lighten($primary-black, 40%);
+$pagination-hover-color: #fff;
+$table-hover-bg: rgba($primary-light, 0.5);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "primary-light": $primary-light,
+    "primary-black": $primary-black,
+  ),
+  $theme-colors
+);
+
+$largeDesktop: 1199.98px;
+$desktop: 991.98px;
+$tablet: 767.98px;
+$phone: 575.98px;

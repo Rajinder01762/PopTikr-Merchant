@@ -1,0 +1,28 @@
+button,
+a {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  &-icon {
+    border: 0;
+    background: transparent;
+    &.type-image {
+      transition: 0.2s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  &-primary-white {
+    @include button-variant(#fff, #dddddd, #000, #000);
+  }
+}
+
+.hidden {
+  display: none !important;
+}

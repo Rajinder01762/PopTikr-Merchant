@@ -1,0 +1,55 @@
+@import "../../assets/style/variables.scss";
+
+.failure,
+.success {
+  height: 250px;
+  @media (max-width: $desktop) {
+    height: 200px;
+  }
+  @media (max-width: $tablet) {
+    height: 150px;
+  }
+}
+
+.wrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.wrapperContent {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  @media (max-width: $desktop) {
+    width: 500px;
+    height: 500px;
+  }
+  @media (max-width: $desktop) {
+    width: 400px;
+    height: 400px;
+  }
+}
+.statusText {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.btnBack {
+  font-weight: 700 !important;
+  padding: 2px;
+  font-size: 16px;
+  background-color: #313131;
+  padding-left: 16px;
+  padding-right: 16px;
+}

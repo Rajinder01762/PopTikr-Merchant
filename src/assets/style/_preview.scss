@@ -1,0 +1,213 @@
+.detail-preview {
+  max-width: 375px;
+  .head {
+    background: #000;
+    border-top: 4px solid #f6149f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .info-head {
+    .up {
+      padding: 12px;
+    }
+    .brand {
+      img {
+        margin-bottom: 7px;
+      }
+      p {
+        font-size: 12px;
+        color: #000;
+      }
+    }
+    .brandinfo {
+      p {
+        font-size: 12px;
+        color: #636363;
+        &.sm {
+          font-size: 9px;
+        }
+      }
+    }
+    .info-links {
+      padding: 10px 10px;
+      border-top: solid 1px #dbdbdb;
+      ul {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        justify-content: space-between;
+        li {
+          padding: 0 2px;
+          list-style: none;
+          font-size: 9px;
+          img {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+  .content-part {
+    background-color: #b0dcdc;
+    padding-top: 11px;
+  }
+  .scroll-part {
+    overflow: auto;
+    height: 300px;
+    background: #fff;
+  }
+  .text-content {
+    background: #fff;
+    padding: 10px;
+    font-size: 10px;
+    color: #000000;
+    line-height: 1.6;
+    ul {
+      padding-left: 0px;
+      li {
+        list-style: none;
+        position: relative;
+        padding-left: 10px;
+        span {
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    .i-title {
+      font-weight: 500;
+      color: #4e4e4e;
+      margin-bottom: 6px;
+    }
+    .i-text {
+      margin-bottom: 0;
+      font-size: 8px;
+      line-height: 1.38;
+    }
+  }
+  .seprator {
+    margin: 0;
+    border-top: solid 1px #dbdbdb;
+  }
+  .bottom-section {
+    &-content {
+      padding: 20px 19px;
+    }
+    .text {
+      font-size: 9px;
+      color: #000000;
+      font-weight: 500;
+      margin-bottom: 0;
+      b {
+        font-weight: 600;
+      }
+    }
+    .btn-wrapper {
+      display: flex;
+      .btn-text {
+        flex-grow: 1;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: #a9d6d6;
+        padding: 10px;
+        text-align: center;
+        &.reedem {
+          background-color: #558080;
+          margin-right: 14px;
+        }
+        &.wallet {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.image-detail-preview {
+  width: 101.2px;
+  margin: 16px auto;
+  height: 120px;
+  background: #000;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  border-bottom: 3px solid #f6149f;
+  .image-card {
+    position: relative;
+    .main-image {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 45px;
+        //background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+      }
+      img {
+        width: 101px;
+        height: 71.6px;
+        object-fit: cover;
+      }
+    }
+    .logo-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      border-top-right-radius: 4px;
+      width: 34px;
+      height: 27px;
+      img {
+        width: 32.5px;
+        height: 21px;
+        object-fit: contain;
+      }
+    }
+    .actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      img {
+        height: 8px;
+        margin: 0 2px;
+      }
+    }
+    .flag {
+      position: absolute;
+      bottom: 0;
+      right: 6px;
+      transform: translateY(50%);
+    }
+  }
+  .content-wrapper {
+    padding: 5px 7px;
+  }
+  .content {
+    margin-bottom: 10px;
+    .text {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.09;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+  }
+  .bottom {
+    .date {
+      font-size: 4.5px;
+      line-height: 1.33;
+      color: #ffffff;
+    }
+    .offer {
+      font-size: 6px;
+      line-height: 1.33;
+      color: #ffffff;
+    }
+  }
+}

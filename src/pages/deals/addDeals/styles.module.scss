@@ -1,0 +1,8 @@
+@import "../../../assets/style/variables.scss";
+.cardWrapper {
+  @media (min-width: $desktop) {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

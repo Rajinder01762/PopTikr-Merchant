@@ -1,0 +1,50 @@
+.table {
+  &-theme {
+    margin-bottom: 0;
+    &-wrapper {
+      border-radius: 8px;
+      // overflow: hidden;
+      .table-responsive {
+        border-radius: 8px;
+      }
+    }
+    th {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    td {
+      font-size: 14px;
+    }
+    th,
+    td {
+      &:first-child {
+        padding-left: 24px;
+      }
+      &:last-child {
+        padding-right: 24px;
+      }
+    }
+  }
+}
+
+.rdt_Table {
+  border-radius: 8px;
+  overflow: hidden;
+  &Header {
+    display: none !important;
+  }
+  &HeadRow {
+  }
+  &Col {
+    &_Sortable {
+      white-space: nowrap;
+    }
+  }
+}
+
+.view-detail-action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}

@@ -1,0 +1,10 @@
+@import "../../assets/style/variables.scss";
+
+.logo {
+  @media (max-width: $desktop) {
+    height: 80px;
+  }
+  @media (max-width: $tablet) {
+    height: 60px;
+  }
+}

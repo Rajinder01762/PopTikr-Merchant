@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  color: #646d82;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.filter-tabs {
+  border-bottom: solid 1px #64777a;
+  margin-bottom: 30px;
+  padding-left: 12px;
+  padding-right: 5px;
+  .tabs {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    li {
+      list-style: none;
+      margin-right: 12px;
+      button {
+        background: transparent;
+        border: 0;
+        position: relative;
+        padding: 12px 12px;
+        font-weight: 600;
+        color: #839598;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          border-radius: 10px;
+          background-color: #000000;
+          transition: 0.2s;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &.active,
+        &:hover {
+          color: #000;
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  .text-black {
+    padding: 0 16px;
+    color: #a4afb7;
+  }
+}
+
+.form-info-tooltip {
+  position: absolute;
+  left: calc(100% + 5px);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  img {
+    height: 18px;
+  }
+}
+
+.profile-tab {
+  display: flex;
+  flex-wrap: wrap;
+  $size: 250px;
+  .react-datepicker-wrapper {
+    input {
+      height: 45px;
+      background: none;
+    }
+  }
+  .logo-column {
+    flex: 0 0 $size;
+    max-width: $size;
+    .theme-card {
+      height: $size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #839598;
+      @media (max-width: $largeDesktop) {
+        max-width: $size;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .form-column {
+    flex: 0 0 calc(100% - #{$size});
+    max-width: calc(100% - #{$size});
+
+    @media (min-width: $largeDesktop) {
+      padding-left: 30px;
+    }
+  }
+  .logo-column,
+  .form-column {
+    @media (max-width: $largeDesktop) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.profile-loaction-form {
+  .working-hours {
+    @media (min-width: $phone) {
+      display: flex;
+    }
+  }
+  .time {
+    .time-select {
+      @media (min-width: $phone) {
+        display: flex;
+      }
+      .time-select-dropdown {
+        display: flex;
+      }
+    }
+    .time-select-dropdown {
+      flex-grow: 1;
+      @media (min-width: $phone) {
+        padding-left: 12px;
+      }
+      @media (max-width: $phone) {
+        padding-top: 8px;
+      }
+      > div {
+        flex-grow: 1;
+        margin: 0 12.5px;
+      }
+      .matrail-select {
+        &__control {
+          min-height: 32px !important;
+
+          border: solid 1px #e9e9f0 !important;
+        }
+        &__value-container {
+          justify-content: center;
+          padding-right: 0;
+          padding-left: 12px !important;
+        }
+      }
+    }
+  }
+}
+.profile-table {
+  .table-responsive {
+    flex-grow: 1;
+    background: #fff;
+    border-radius: 8px;
+  }
+}
